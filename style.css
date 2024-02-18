@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url("images/bg1.png") no-repeat center center/cover ; 
+    height: 100vh; /* view height */
+    overflow: hidden; /* no scrolling */
+}
+
+
+
+
+/* taskkBar */
+
+/*dot operator to refer to a class */
+.taskbar{  
+    position: absolute;
+    bottom: 0px;
+    width: 100vw; /* view width */
+    display: flex;
+    justify-content: center;
+    background-color: #e2eef9; /* using color picker tool */
+    z-index: 110;
+}
+
+/* # operator to refer by id */
+#righttaskbar{
+    position: absolute;
+    right: 0px;
+    bottom: 1px;
+    height: 40px;
+}
+
+/* # operator to refer by id */
+/* resizing file explorer icon because size is different than other images */
+
+#fileExplorer{
+    width: 35px;
+    height: 35px;
+    margin: 5;
+}
+
+/* Start Menu */
+
+#startmenu{
+    width: 600px;
+    border-radius: 5px;
+}
+
+.startmenu{
+    position: absolute;
+    bottom: -650px; /* used in javascript code */
+    text-align: center;
+    width: 100%;
+    transition: all 0.4s ease-in; 
+    z-index: 6; /* by how much amount are they coming out of the screen */
+}
+
+/* Search Menu */
+
+#searchBox{
+    width: 750px;
+    border-radius: 5px;
+}
+
+.searchmenu{
+    position: absolute;
+    bottom: -660px;
+    text-align: center;
+    width: 100%;
+    transition: all 0.4s ease-in;
+    z-index: 6;
+}
+
+/* Widget Menu */
+
+#widgetBox{
+    height: 94.5vh;
+    border-radius: 4px;
+}
+
+.widgetmenu{
+    position: absolute;
+    left: -950px;
+    /* text-align: center; */
+    width: 100%;
+    transition: all 0.6s ease-in;
+    z-index: 6;
+}
+
+/* File Explorer */
+
+#fileManager{
+    width: 1000px;
+    border-radius: 5px;
+}
+
+.filemenu{
+    position: absolute;
+    left: 0px;
+    top: -700px;
+    text-align: center;
+    width: 100%;
+    transition: all 0.4s ease-in;
+    z-index: 5;
+}
+
+/* File Explorer */
+
+#store{
+    width: 800px;
+    border-radius: 5px;
+}
+
+.microsoftstore{
+    position: absolute;
+    left: 0px;
+    top: -800px;
+    text-align: center;
+    width: 100%;
+    transition: all 0.4s ease-in;
+    z-index: 5;
+}
+
+/* Desktop Icon */
+
+.icon{
+    margin: 6px;
+    width: 60px;
+    height: 45px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    font-size: 12px;
+    font-family: 'Segoe UI Semibold';
+}
+
+.icon img{
+    width: 45px;
+    margin: 2px;
+}
+
+#edge{
+    margin-top: 162px;
+}
+
+#recyclebin{
+    margin-top: 78px;
+}
+
+#vlc{
+    margin-top: 234px;
+}
